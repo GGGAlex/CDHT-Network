@@ -7,7 +7,7 @@ import sys
 #---------------------------------------------------------------------------------------------------------------------#
 #                                                CDHT Peer Class                                                      #
 #                                                                                                                     #
-#  Start new peer by entering the following command at the Terminal or xterm:                         		      	    #
+#  Start new peer by entering the following command at the Terminal or xterm:                         		      #
 #                                                                                                                     #
 #            >>> python3 cdht.py [X] [Y] [Z]                                                                          #
 #                                                                                                                     #
