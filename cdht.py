@@ -157,13 +157,13 @@ class CDHTPeer:
 				break
 	#---------------------------------------------------------------------------------#
 	#                   Stage 2: Maintain Successor Connections                       #
-  #                                                                                 #
+  	#                                                                                 #
 	# The peer will maintain the connection between the 2 successors once they        #
 	# have been found.                                                                #
-  #                                                                                 #	
+  	#                                                                                 #	
 	# The peer sends numbered packets to successors to identify the last packet       #
 	# received from each successor.                                                   #
-  #                                                                                 #
+  	#                                                                                 #
 	# If the peer doesn't receive 5 consecutive packets (alive_threshold) then the    #
 	# successor is presumed dead and the search for a new succesor begins.            #
 	#---------------------------------------------------------------------------------#
@@ -233,7 +233,7 @@ class CDHTPeer:
 
 	#----------------------------------------------------------------#
 	#                       UDP Socket Control                       #
-    #                                                                #
+    	#                                                                #
 	#    Allows peer to open, close and check (if open) UDP sockets  #
 	#----------------------------------------------------------------#
 
@@ -258,7 +258,7 @@ class CDHTPeer:
 
 	#----------------------------------------------------------------#
 	#                  UDP Socket Response Management                #
-    #                                                                #
+    	#                                                                #
 	#     Allows peer to respond to UDP messages based on commands   #
 	#     from other peers in the network                            #
 	#----------------------------------------------------------------#	
@@ -317,7 +317,7 @@ class CDHTPeer:
 
 	#----------------------------------------------------------------#
 	#                       TCP Socket Control                       #
-    #                                                                #
+    	#                                                                #
 	# Allows peer to listen for TCP connection requests and respond  #
 	#----------------------------------------------------------------#
 
@@ -368,7 +368,7 @@ class CDHTPeer:
 			raise
 
 	#-----------------------------------------------------------------#
-	#               Successor/Predecessor Management			 	  #
+	#               Successor/Predecessor Management		  #
 	#                                                                 #
 	#     Allows peer to update and change successor/predecessors     #
 	#    Peer will also check if the file range needs to be updated   #
@@ -413,10 +413,10 @@ class CDHTPeer:
 
 
 	#--------------------------------------------------------------#
-	#                  File System Management	 	       		   #
-    #                                                              #
-	# Allows peer to manage file system by:			      		   #
-	#    Activate/deactivate file system			               #
+	#                  File System Management	 	       #
+    	#                                                              #
+	# Allows peer to manage file system by:			       #
+	#    Activate/deactivate file system		               #
    	#    Partition file ranges among the closest peers in network  #
 	#    Update file range based on changes to peers in network    #
 	#    Request files from other peers in the network             #
@@ -561,9 +561,6 @@ class TCPConnection:
 			return recv_successor_list
 		
 
-#----------------------------------------------------------------#
-#          			Peer Initialization						                   #
-#----------------------------------------------------------------#
 
 IDENTITY = int(sys.argv[1])
 SUCCESSORS = [int(sys.argv[2]),int(sys.argv[3])]
